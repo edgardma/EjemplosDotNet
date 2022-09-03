@@ -12,7 +12,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //Console.WriteLine(Challenge1.IsAnagrama("prueba", "Prueba"));
 
             //Challenge2.Fibonacci();
-            Challenge3.PrintFirst100PrimeNumbers();
+            //Challenge3.PrintFirst100PrimeNumbers();
+
+            Challenge4.Area(new Triangle(10.0, 5.0));
+            Challenge4.Area(new Rectangle(5.0, 7.0));
+            Challenge4.Area(new Square(4.0));
         }
     }
 }

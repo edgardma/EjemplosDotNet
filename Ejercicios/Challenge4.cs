@@ -18,13 +18,11 @@
  *
  */
 
-using System;
-
 namespace MyApp // Note: actual namespace depends on the project name.
 {
     public class Challenge4
     {
-        public static double area(Polygon polygon) 
+        public static double Area(Polygon polygon) 
         {
             polygon.PrintArea();
 
@@ -44,15 +42,62 @@ namespace MyApp // Note: actual namespace depends on the project name.
         private double baseTriangle;
         private double height;
 
+        public Triangle(double baseTriangle, double height)
+        {
+            this.baseTriangle = baseTriangle;
+            this.height = height;
+        }
+
         public double Area() 
         {
-            return 0;
+            return (baseTriangle * height) / 2;
         }
 
         public void PrintArea()
         {
-
+            Console.WriteLine("El área del triangulo es: " + this.Area());
         }
     }
 
+    public class Rectangle : Polygon
+    {
+        private double length;
+        private double width;
+
+        public Rectangle(double length, double width)
+        {
+            this.length = length;
+            this.width = width;
+        }
+
+        public double Area() 
+        {
+            return length * width;
+        }
+
+        public void PrintArea()
+        {
+            Console.WriteLine("El área del rectangulo es: " + this.Area());
+        }
+    }
+
+    public class Square : Polygon
+    {
+        private double side;        
+
+        public Square(double side)
+        {
+            this.side = side;
+        }
+
+        public double Area() 
+        {
+            return side * side;
+        }
+
+        public void PrintArea()
+        {
+            Console.WriteLine("El área del cuadrado es: " + this.Area());
+        }
+    }
 }
