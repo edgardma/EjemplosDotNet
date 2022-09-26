@@ -18,8 +18,10 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //Challenge4.Area(new Rectangle(5.0, 7.0));
             //Challenge4.Area(new Square(4.0));
 
-            Console.WriteLine(Challenge6.Reverse("Hola mundo"));
-            Console.WriteLine(Challenge6.RecursiveReverse("Hola mundo"));
+            //Console.WriteLine(Challenge6.Reverse("Hola mundo"));
+            //Console.WriteLine(Challenge6.RecursiveReverse("Hola mundo"));
+
+            Challenge7.CountWords("Hola, mi nombre es edgard. Mi nombre completo es Edgard Marquez.");
         }
     }
 }
